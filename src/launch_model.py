@@ -19,7 +19,7 @@ base_model = AutoModelForCausalLM.from_pretrained(model_directory, use_auth_toke
 #Загрузка модель с peft
 model = PeftModel.from_pretrained(base_model, adapter_model_path)
 
-system_prompt = "Отвечай на русском языке" # Модель может начать отвечать на английском, если в запросе есть английские слова
+system_prompt = "Отвечай на русском языке. " # Модель может начать отвечать на английском, если в запросе есть английские слова
 input_text = system_prompt + "Привет Gemma! Расскажи мне как провести self-alignment модели google/gemma-2-2b-it?"
 inputs = tokenizer(input_text, return_tensors="pt")
 
