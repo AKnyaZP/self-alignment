@@ -1,11 +1,11 @@
 # Self-Alignment with LLM for Russian Instructions
 
-## Описание
-Этот проект использует датасет  <a href='https://huggingface.co/datasets/OpenAssistant/oasst1'>OpenAssistant/oasst1</a> для обучения модели LLM, которая генерирует ответы на русскоязычные инструкции. Основная цель проекта — исследовать подходы к выравниванию модели (self-alignment) для достижения определенного стиля ответов. Я буду использовать *google/gemma-2-2b-it* в качестве языковой модели, для которой будет проводиться self-alignment
-<a href='https://wandb.ai/ai-sigma/alignment-gemma?nw=nwuserknyazev_artem'>WandB report можно найти тут...</a>
+## Описание :page_with_curl:
+Этот проект использует датасет  <a href='https://huggingface.co/datasets/OpenAssistant/oasst1'>OpenAssistant/oasst1</a> для обучения модели LLM, которая генерирует ответы на русскоязычные инструкции. Основная цель проекта — исследовать подходы к выравниванию модели (self-alignment) для достижения определенного стиля ответов. Я буду использовать *google/gemma-2-2b-it* в качестве языковой модели, для которой будет проводиться self-alignment  
+<a href='https://wandb.ai/ai-sigma/alignment-gemma?nw=nwuserknyazev_artem'>WandB report можно найти тут...</a> :bar_chart:
 
 
-## Структура проекта
+## Структура проекта :file_folder:
 - `data/`: Директория для хранения данных (не включены в репозиторий). Датасеты с инструкциями на русском языке.
 - `data/data4alignment`: В этой директории хранятся данные именно для выравнивания модели. 
 - `notebooks/`:  `/eda.ipynb`- ноутбук с **EDA** и **визуализацией данных**, а также `/data4alignment.ipynb` - ноутбук с созданием **датасета для элаймента**, посредством *генерации ответов* на инструкции и их *оценкой* по критериям из таблицы (в качестве *label* я использовал *усреднённую оценку* ответа по всем заданным критериям).
