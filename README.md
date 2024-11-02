@@ -118,13 +118,17 @@ Google разработал модель искусственного интел
    ```bash
    python launch_model.py
 
-5. Введите свой запрос в ответ на сообщение `enter your querry`:
+5. У вас появится сообщение `Очистить кэш и вызвать сборщик мусора? Y/n` (Код может очистить кэш, если вам это нужно, потому что не у всех устройств много памяти):
    ```bash
-   Enter your querry: <your querry>
+   Очистить кэш и вызвать сборщик мусора? Y/n: 
 
-6. Далее вставьте свой `huggingface_token`, в ответ на сообщение `Enter your Hugging Face token` и нажмите `Enter`.
+6. Введите свой запрос в ответ на сообщение `Введите ваш запрос: `:
+   ```bash
+   Введите ваш запрос: <your querry>
+
+7. Далее вставьте свой `huggingface_token`, в ответ на сообщение `Введите ваш токен Hugging Face: ` и нажмите `Enter`.
    Создать huggingface токен можно тут :arrow_right: <a href="https://huggingface.co/settings/tokens"> <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF_token" width="30" height="30"></a>
    ```bash
-   Enter your Hugging Face token: <your_token>
+   Введите ваш токен Hugging Face: <your_token>
 
 8. Ожидайте ответа модели)) 
