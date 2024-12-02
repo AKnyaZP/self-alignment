@@ -1,2 +1,4 @@
-alignmentenv
+alignmentenv/
 .env
+
+src/__pycache__/

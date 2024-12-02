@@ -27,3 +27,7 @@ tqdm==4.66.5
 transformers==4.46.1
 typing_extensions==4.12.2
 urllib3==2.2.3
+datasets
+bert-score
+scikit-learn
+logging
